@@ -1,0 +1,7 @@
+packages:
+  - package: dbt-labs/codegen  #pour générer les sources et le model
+    version: 0.14.1
+  - package: dbt-labs/dbt_utils  #a des fonction comme star qui recupere les chnamps sauf ceux lister
+    version: 1.4.1
+  - package: dbt-labs/audit_helper #pour comparer les tables entre elles
+    version: 0.14.0
