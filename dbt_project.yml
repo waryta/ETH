@@ -4,6 +4,7 @@
 name: 'eth'
 version: '1.0.0'
 
+
 # This setting configures which "profile" dbt uses for this project.
 profile: 'eth'
 
@@ -41,6 +42,10 @@ models:
           - power bi 
           - report
         +schema: marts #veut dire que tout ce qi est dan sle rep marts seront creer dans un rep spe cal nom_defaut_marts
+      base:
+        +schema: base
+      staging:
+        +schema: staging
 
 
 vars:
@@ -53,5 +58,3 @@ dispatch:
     search_order: ['eth', 'dbt_utils'] #specifié la desti des macro à use en prio
 #just test comment
 #next test
-
-#ok
