@@ -11,3 +11,27 @@ models:
         data_tests:
           - unique
           - not_null
+  - name: stablecoin_activity_per_day
+    config:
+      contract:
+        enforce: true
+    columns:
+      - name: date
+        data_type: date
+        description: ""
+
+      - name: token_address
+        data_type: varchar
+        description: ""
+
+      - name: type
+        data_type: varchar
+        description: ""
+
+      - name: symbol
+        data_type: varchar
+        description: ""
+
+      - name: total_usd_value
+        data_type: float
+        description: ""
