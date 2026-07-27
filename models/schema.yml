@@ -14,7 +14,8 @@ models:
   - name: stablecoin_activity_per_day
     config:
       contract:
-        enforce: true
+        enforced: true
+        alias_type: true
     columns:
       - name: date
         data_type: date
