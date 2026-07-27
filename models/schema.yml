@@ -12,6 +12,7 @@ models:
           - unique
           - not_null
   - name: stablecoin_activity_per_day
+    lastest_version: 1
     config:
       contract:
         enforced: true
@@ -36,3 +37,15 @@ models:
       - name: total_usd_value
         data_type: float
         description: ""
+  # Declare the versions, and highlight the diffs
+    versions:
+    
+      - v: 1
+        # Matches what's above -- nothing more needed
+    
+      - v: 2
+        # Removed a column -- this is the breaking change!
+        columns:
+          # This means: use the 'columns' list from above, but exclude country_name
+          - include: all
+            exclude: [token_address,symbol]
