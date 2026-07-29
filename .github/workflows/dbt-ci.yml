@@ -15,7 +15,7 @@ jobs:
       DBT_PRIVATE_KEY_PATH: /home/runner/.dbt/rsa_key.p8
       DBT_SNOWFLAKE_IDENTIFIER: ${{ secrets.DBT_SNOWFLAKE_IDENTIFIER }}
       DBT_SNOWFLAKE_ROLE: ${{ secrets.DBT_SNOWFLAKE_ROLE }}
-      DBT_SNOWFLAKE_USER: ${{ secrets.SNOWFLAKE_USER }}
+      DBT_SNOWFLAKE_USER: ${{ secrets.DBT.SNOWFLAKE_USER }}
       #HOPE
 
 
