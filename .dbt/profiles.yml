@@ -1,13 +1,13 @@
 eth:
   outputs:
     ci:
-      account: FIPPPAO-ES17205
+      account: "{{env_var('DBT_SNOWFLAKE_IDENTIFIER')}}"
       database: CI
       private_key_path: "{{env_var('DBT_PRIVATE_KEY_PATH')}}"
-      role: ACCOUNTADMIN
+      role: "{{env_var('DBT_SNOWFLAKE_ROLE')}}"
       schema: CI_schema
       threads: 1
       type: snowflake
-      user: wareine
+      user: "{{env_var('DBT_SNOWFLAKE_user')}}"
       warehouse: compute_wh
   target: ci
