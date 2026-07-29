@@ -3,7 +3,7 @@ eth:
     ci:
       account: FIPPPAO-ES17205
       database: CI
-      private_key_path: "{{enc_var('DBT_PRIVATE_KEY_PATH')}}"
+      private_key_path: "{{env_var('DBT_PRIVATE_KEY_PATH')}}"
       role: ACCOUNTADMIN
       schema: CI_schema
       threads: 1
