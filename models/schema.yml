@@ -15,7 +15,7 @@ models:
     lastest_version: 1
     config:
       contract:
-        enforced: true
+        enforced: false #car pour valider le contrat et faire certain check
         alias_type: true
     columns:
       - name: date

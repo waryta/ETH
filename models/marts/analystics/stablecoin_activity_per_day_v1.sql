@@ -3,7 +3,7 @@ t.date,
 t.token_address,
 s.type,
 s.symbol,
-{{conversion2('t.value','s.decimals')}} as total_usd_value
+{{conversion2('t.value','s.decimals')}} as total_usd_valu
 
 from {{ source('eth', 'token_transfers')}} t
 left join {{ref('stablecoins')}} s
