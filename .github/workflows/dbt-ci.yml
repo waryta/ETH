@@ -61,7 +61,8 @@ jobs:
           dbt deps
           dbt parse --target prod
           cp target/manifest.json state/manifest.json
-          git checkout -
+          rm -rf target/
+          git checkout -f -
 
 
       - name: Run dbt
