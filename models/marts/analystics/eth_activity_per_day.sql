@@ -4,7 +4,7 @@ transaction_category,
 count(*) as tx_count,
 --sum(value)/1e18 as sum_eth_value
 
-{{ethereum_conversion('value')}} as sum_eth_value
+{{ethereum_conversion('value')}} as sum_eth_value_version2
 from {{ ref('int_transactions_enriched') }}
 
 group by 
