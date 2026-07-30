@@ -6,7 +6,7 @@
 select
 t.date,
 t.token_address,
-2 as new_field2,
+1 as new_field2,
 {{conversion2('t.value',var('token_decimals_var'))}} as total_value
 
 from {{ source('eth', 'token_transfers')}} t
