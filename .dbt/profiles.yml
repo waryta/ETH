@@ -10,4 +10,14 @@ eth:
       type: snowflake
       user: wareine
       warehouse: compute_wh
+    prod:
+      account: "{{env_var('DBT_SNOWFLAKE_IDENTIFIER')}}"
+      database: PROD
+      private_key_path: "{{env_var('DBT_PRIVATE_KEY_PATH')}}"
+      role: "{{env_var('DBT_SNOWFLAKE_ROLE')}}"
+      schema: prod_schema
+      threads: 1
+      type: snowflake
+      user: wareine
+      warehouse: compute_wh
   target: ci
