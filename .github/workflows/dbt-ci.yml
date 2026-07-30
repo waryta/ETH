@@ -27,7 +27,7 @@ jobs:
         #autrefoi actions/checkout@v3
         #just test
         with:
-        fetch-depth: 0 #need so we ca access master too
+          fetch-depth: 0 #need so we ca access master too
 
       - name: Set up Python
         uses: actions/setup-python@v6
