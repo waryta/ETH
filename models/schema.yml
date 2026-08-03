@@ -1,6 +1,12 @@
 version: 2
 
 models:
+  - name: int_transactions_enriched
+    columns:
+      - name: value
+        data_tests:
+          - assert_value_amout_positive
+
   - name: stg_transactions
     description: Transactions in the ethereum blockchain
     columns:
